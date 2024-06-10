@@ -1,0 +1,21 @@
+:root {
+  height: 100vh;
+  background-image: linear-gradient(to right, #6eda78, #ffa200);
+}
+.center {
+  margin: auto;
+}
+.border {
+  padding: 1rem;
+  border: 2px solid #555;
+  border-radius: 10px;
+}
+.link-button {
+  color: "#000000";
+}
+.link-button:hover {
+  color: "#0958d9";
+}
+div {
+  text-justify: center;
+}

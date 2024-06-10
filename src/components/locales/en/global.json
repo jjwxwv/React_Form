@@ -1,0 +1,41 @@
+{
+  "en": "EN",
+  "th": "TH",
+  "home": {
+    "h1": "Form & Table"
+  },
+  "form": {
+    "title": "Title",
+    "mr": "Mr",
+    "ms": "Ms",
+    "mrs": "Mrs",
+    "firstname": "Firstname",
+    "lastname": "Lastname",
+    "birthday": "Birthday",
+    "format": "yyyy/mm/dd",
+    "nationality": "Nationality",
+    "pleaseselect": "--Please Select--",
+    "th": "Thai",
+    "fr": "France",
+    "us": "America",
+    "citizenid": "citizenID",
+    "gender": "Gender",
+    "male": "Male",
+    "female": "Female",
+    "unsex": "Unsex",
+    "phoneNo": "Mobile Phone",
+    "passport": "Passport No",
+    "salary": "Expected Salary",
+    "reset": "RESET",
+    "submit": "SUBMIT"
+  },
+  "table": {
+    "name": "Name",
+    "selectall": "Select All",
+    "delete": "DELETE",
+    "manage": "MANAGE",
+    "edit": "EDIT",
+    "prev": "PREV",
+    "next": "NEXT"
+  }
+}
