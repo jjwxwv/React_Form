@@ -12,7 +12,7 @@ function getCountryFlagEmoji(countryCode: CountryCode) {
 const phoneCountry = [
   { value: "th", label: `${getCountryFlagEmoji("TH")}+66` },
   { value: "fr", label: `${getCountryFlagEmoji("FR")}+33` },
-  { value: "us", label: `${getCountryFlagEmoji("US")}+33` },
+  { value: "us", label: `${getCountryFlagEmoji("US")}+1` },
 ];
 
 function App() {
