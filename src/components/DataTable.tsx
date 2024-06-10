@@ -39,9 +39,9 @@ function DataTable({ nationality, gender, phoneCountry }: Prop) {
       id: value.id!,
       name: `${value.firstname} ${value.lastname}`,
       gender: gender.find((sex) => sex.value === value.gender)!.label,
-      phoneNo: `${
-        phoneCountry.find((country) => country.value === value.country)!.label
-      }${value.phoneNo}`,
+      phoneNo: `${phoneCountry
+        .find((country) => country.value === value.country)!
+        .label.slice(4)}${value.phoneNo}`,
       nationality: nationality.find((nat) => nat.value === value.nationality)!
         .label,
     };
