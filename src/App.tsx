@@ -2,11 +2,17 @@ import { Flex, Select } from "antd";
 import DataForm from "./components/DataForm";
 import DataTable from "./components/DataTable";
 import { useTranslation } from "react-i18next";
+import { CountryCode } from "./country";
 
+function getCountryFlagEmoji(countryCode: CountryCode) {
+  return [...countryCode.toUpperCase()]
+    .map((char) => String.fromCodePoint(127397 + char.charCodeAt(0)))
+    .reduce((a, b) => `${a}${b}`);
+}
 const phoneCountry = [
-  { value: "th", label: "+66" },
-  { value: "fr", label: "+33" },
-  { value: "us", label: "+1" },
+  { value: "th", label: `${getCountryFlagEmoji("TH")}+66` },
+  { value: "fr", label: `${getCountryFlagEmoji("FR")}+33` },
+  { value: "us", label: `${getCountryFlagEmoji("US")}+33` },
 ];
 
 function App() {

@@ -4,9 +4,11 @@ import dayjs from "dayjs";
 
 const initialState: () => DataType[] = function () {
   const storedValue: DataType[] = JSON.parse(localStorage.getItem("data")!);
-  const initialValue = storedValue.map((value) => {
-    return { ...value, birthday: dayjs(value.birthday) };
-  });
+  const initialValue = storedValue
+    ? storedValue.map((value) => {
+        return { ...value, birthday: dayjs(value.birthday) };
+      })
+    : [];
   return initialValue;
 };
 const dataSlice = createSlice({
