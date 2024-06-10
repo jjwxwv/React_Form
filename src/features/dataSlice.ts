@@ -16,6 +16,7 @@ const dataSlice = createSlice({
   initialState,
   reducers: {
     submit(state, action) {
+      alert("Save Success");
       const getId = state.map((value) => value.id!);
       if (getId.includes(action.payload.id)) {
         console.log("update");
@@ -36,6 +37,7 @@ const dataSlice = createSlice({
         payload: number[] | React.Key[];
       }
     ) {
+      alert("Delete Success");
       const updatedState = state.filter(
         (value) => !action.payload.includes(value.id!)
       );
